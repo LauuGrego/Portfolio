@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lautaro Gregoraschuk | Backend Developer</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" media="all">
     <link rel="icon" href="images/logo.jpg" type="image/jpg">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -15,52 +15,118 @@
     <header class="header">
         <nav class="nav">
             <ul class="nav__list">
-                <li class="nav__item"><a class="nav__link" href="#home">Inicio</a></li>
                 <li class="nav__item"><a class="nav__link" href="#about">Sobre mí</a></li>
+                <li class="nav__item"><a class="nav__link" href="#skills">Habilidades</a></li>
                 <li class="nav__item"><a class="nav__link" href="#projects">Proyectos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#certificates">Certificados</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main class="main">
-        <section id="home" class="hero animate-fadein" data-aos="fade-down" data-aos-duration="1000">
+        <!-- HERO / SOBRE MI -->
+        <!-- Ejemplo de uso de animación sin librerías pesadas -->
+        <section id="about" class="hero" data-animate>
             <div class="hero__content">
                 <h1 class="hero__title">Lautaro Gregoraschuk</h1>
                 <p class="hero__subtitle">Estudiante de Ingeniería en Sistemas</p>
-                <p class="hero__desc">Apasionado por la tecnología, el desarrollo de software y el análisis de sistemas. Busco oportunidades para trabajar y seguir creciendo en IT.</p>
+                <p class="hero__desc">
+                    Apasionado por la tecnología, el desarrollo de software y el análisis de sistemas.<br>
+                    Busco oportunidades para trabajar y seguir creciendo en TI.
+                </p>
                 <a href="https://drive.google.com/file/d/1guy4LcWdHb2lA3CfZvqBZMiizfq9Ymo-/view?usp=drive_link" class="btn-cv animate-pop" target="_blank" rel="noopener">Ver CV</a>
             </div>
         </section>
-        <section id="about" class="section section--about" data-aos="fade-up" data-aos-duration="1000">
+        <!-- HABILIDADES -->
+        <section id="skills" class="section section--about" data-animate>
             <div class="container">
-                <h2 class="section__title">Stack Tecnológico</h2>
+                <h2 class="section__title">Habilidades Técnicas</h2>
                 <div class="stack__grid">
-                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-cubes"></i><span>Object-Oriented Programming</span></div>
-                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-layer-group"></i><span>Conceptual/Relational Systems Modeling</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-cubes"></i><span>Programación Orientada a Objetos</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-layer-group"></i><span>Modelado Conceptual/Relacional</span></div>
                     <div class="stack__item" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-git-alt"></i><span>Git/GitHub</span></div>
                     <div class="stack__item" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-python"></i><span>Python</span></div>
                     <div class="stack__item" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-database"></i><span>SQL</span></div>
                     <div class="stack__item" data-aos="zoom-in" data-aos-delay="600"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
-                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="700"><i class="fas fa-project-diagram"></i><span>UML Modeling</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="700"><i class="fas fa-project-diagram"></i><span>Modelado UML</span></div>
                     <div class="stack__item" data-aos="zoom-in" data-aos-delay="800"><i class="fab fa-html5"></i><span>HTML</span></div>
                     <div class="stack__item" data-aos="zoom-in" data-aos-delay="900"><i class="fab fa-css3-alt"></i><span>CSS/SCSS</span></div>
                     <div class="stack__item" data-aos="zoom-in" data-aos-delay="1000"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
                 </div>
             </div>
         </section>
-        <section class="section section--about-soft" data-aos="fade-up" data-aos-duration="1000">
+        <!-- SOBRE MI (SOFT SKILLS) -->
+        <section class="section section--about-soft" data-animate>
             <div class="container">
                 <h2 class="section__title">Sobre mí</h2>
                 <p class="section__description">
-                    Me considero una persona responsable, proactiva y con gran capacidad de aprendizaje. Disfruto trabajar en equipo, comunicarme de manera clara y aportar ideas para resolver problemas. 
-                    Tengo facilidad para adaptarme a nuevos entornos y desafíos, y siempre busco mejorar tanto en lo técnico como en lo personal. 
-                    Mi motivación, compromiso y actitud positiva me permiten integrarme rápidamente a cualquier equipo y sumar valor desde el primer día. 
+                    Me considero una persona responsable, proactiva y con gran capacidad de aprendizaje. Disfruto trabajar en equipo, comunicarme de manera clara y aportar ideas para resolver problemas.<br>
+                    Tengo facilidad para adaptarme a nuevos entornos y desafíos, y siempre busco mejorar tanto en lo técnico como en lo personal.<br>
+                    Mi motivación, compromiso y actitud positiva me permiten integrarme rápidamente a cualquier equipo y sumar valor desde el primer día.<br>
                     Creo que estas cualidades, sumadas a mis conocimientos técnicos, me hacen un candidato ideal para comenzar mi carrera profesional en IT.
                 </p>
             </div>
         </section>
-        <!-- SECTOR DE CERTIFICADOS -->
-        <section id="certificates" class="section section--certificates" data-aos="fade-up">
+        <!-- PROYECTOS -->
+        <section id="projects" class="section section--projects" data-animate>
+            <div class="container">
+                <h2 class="section__title">Proyectos Destacados</h2>
+                <div class="projects__grid">
+                    <div class="project card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="card__content">
+                            <h3 class="project__title">Catálogo Web - Marcapasos Deportes &amp; COTITO</h3>
+                            <p class="project__description">
+                                <strong>Rol:</strong> Fullstack Developer<br>
+                            </p>
+                            <div class="project__meta">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Python(FastAPI)</span>
+                                <span class="tech-badge">MongoDB</span>
+                            </div>
+                            <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catálogo Marcapasos</a>
+                            <a href="https://cotitokids.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catálogo COTITO</a>
+                            <a href="https://github.com/LauuGrego/marcapasos-backend" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://youtu.be/tu_video_marcapasos" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Explicación Codigo</a>
+                        </div>
+                    </div>
+                    <div class="project card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="card__content">
+                            <h3 class="project__title">Radio Web - Pandemonium</h3>
+                            <p class="project__description">
+                                <strong>Rol:</strong> Fullstack Developer<br>
+                            </p>
+                            <div class="project__meta">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript(Node.js)</span>
+                            </div>
+                            <a href="https://pandemoniumradio.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
+                            <a href="https://github.com/LauuGrego/pandemoniumradio" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://youtu.be/tu_video_pandemonium" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Explicación Código</a>
+                        </div>
+                    </div>
+                    <div class="project card" data-aos="fade-left" data-aos-delay="400">
+                        <div class="card__content">
+                            <h3 class="project__title">Invitaciones Digitales (Mobile)</h3>
+                            <p class="project__description">
+                                <strong>Rol:</strong> Frontend Developer<br>
+                            </p>
+                            <div class="project__meta">
+                                <span class="tech-badge">HTML</span>
+                                <span class="tech-badge">CSS</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </div>
+                            <a href="https://invitacion1.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Invitación Casamiento</a>
+                            <a href="https://invitacion2.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Invitación 15 Años</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CERTIFICADOS -->
+        <section id="certificates" class="section section--certificates" data-animate>
             <div class="container">
                 <h2 class="section__title">Certificados</h2>
                 <ul class="certificates__list">
@@ -92,68 +158,29 @@
                 </ul>
             </div>
         </section>
-        <section id="projects" class="section section--projects">
+        <!-- TESTIMONIOS / PRUEBAS SOCIALES -->
+        <section id="testimonials" class="section section--testimonials" data-animate>
             <div class="container">
-                <h2 class="section__title">Proyectos</h2>
-                <div class="projects__grid">
-                    <div class="project card" data-aos="fade-right" data-aos-delay="200">
-                        <div class="card__content">
-                            <h3 class="project__title">Catalogo Web - Marcapasos Deportes</h3>
-                            <p class="project__description">
-                                Catalogo virtual que permite la gestión de productos de manera eficiente y segura.
-                            </p>
-                            <div class="project__meta">
-                                <span class="tech-badge">HTML</span>
-                                <span class="tech-badge">CSS</span>
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">FastAPI</span>
-                                <span class="tech-badge">MongoDB</span>
-                            </div>
-                            <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catalogo</a>
-                            <a href="https://github.com/LauuGrego/marcapasos-backend" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://youtu.be/tu_video_marcapasos" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
-                        </div>
-                    </div>
-                    <div class="project card" data-aos="fade-left" data-aos-delay="400">
-                        <div class="card__content">
-                            <h3 class="project__title">Catalogo Web - COTITO</h3>
-                            <p class="project__description">
-                               Catalogo virtual que permite la gestión de productos de manera eficiente y segura.
-                            </p>
-                            <div class="project__meta">
-                                <span class="tech-badge">HTML</span>
-                                <span class="tech-badge">CSS</span>
-                                <span class="tech-badge">JavaScript</span>
-                                <span class="tech-badge">Python</span>
-                                <span class="tech-badge">FastAPI</span>
-                                <span class="tech-badge">MongoDB</span>
-                            </div>
-                            <a href="https://cotitotienda.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catalogo</a>
-                            <a href="https://github.com/LauuGrego/cotito-backend" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://youtu.be/tu_video_cotito" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
-                        </div>
-                    </div>
-                    <div class="project card" data-aos="fade-up" data-aos-delay="600">
-                        <div class="card__content">
-                            <h3 class="project__title">Radio Web - Pandemonium</h3>
-                            <p class="project__description">
-                                Plataforma de radio online con catálogo de música y streaming, desarrollada con tecnologías web modernas.
-                            </p>
-                            <div class="project__meta">
-                                <span class="tech-badge">HTML</span>
-                                <span class="tech-badge">CSS</span>
-                                <span class="tech-badge">JavaScript</span>
-                            </div>
-                            <a href="https://pandemoniumradio.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
-                            <a href="https://github.com/LauuGrego/pandemoniumradio" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://youtu.be/tu_video_pandemonium" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
-                        </div>
-                    </div>
+                <h2 class="section__title">Testimonios</h2>
+                <div class="testimonials__list">
+                    <!-- Ejemplo de testimonio, puedes agregar más -->
+                    <blockquote class="testimonial">
+                        <p>"Lautaro demostró gran compromiso y profesionalismo en el desarrollo de nuestros sistemas internos."</p>
+                        <footer>- Profesor/a o Cliente (puedes agregar nombre real)</footer>
+                    </blockquote>
+                       <blockquote class="testimonial">
+                        <p>"Lautaro demostró gran compromiso y profesionalismo en el desarrollo de nuestros sistemas internos."</p>
+                        <footer>- Profesor/a o Cliente (puedes agregar nombre real)</footer>
+                    </blockquote>
+                       <blockquote class="testimonial">
+                        <p>"Lautaro demostró gran compromiso y profesionalismo en el desarrollo de nuestros sistemas internos."</p>
+                        <footer>- Profesor/a o Cliente (puedes agregar nombre real)</footer>
+                    </blockquote>
                 </div>
             </div>
         </section>
-        <section id="contact" class="section section--contact" data-aos="fade-up">
+        <!-- CONTACTO -->
+        <section id="contact" class="section section--contact" data-animate>
             <div class="container">
                 <h2 class="section__title">Contacto</h2>
                 <div class="contact__icons">
@@ -161,7 +188,6 @@
                     <a href="https://github.com/LauuGrego" target="_blank" rel="noopener" class="contact__icon" title="GitHub"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/lautaro-gregoraschuk-8a9292301/" target="_blank" rel="noopener" class="contact__icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <!-- FORMULARIO DE CONTACTO -->
                 <form class="contact__form animate-pop"
                       action="https://formspree.io/f/xkgbrrol" 
                       method="POST">
@@ -217,6 +243,23 @@
             mirror: false,   // No animación de salida
             offset: 100
         });
+    </script>
+    <script>
+    // IntersectionObserver para animar entradas de sección sin librerías pesadas
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15 });
+        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+    } else {
+        // fallback: mostrar todo
+        document.querySelectorAll('[data-animate]').forEach(el => el.classList.add('in-view'));
+    }
     </script>
 </body>
 </html>
