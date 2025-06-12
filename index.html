@@ -8,6 +8,8 @@
     <link rel="icon" href="images/logo.jpg" type="image/jpg">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="header">
@@ -21,31 +23,32 @@
         </nav>
     </header>
     <main class="main">
-        <section id="home" class="hero">
+        <section id="home" class="hero animate-fadein" data-aos="fade-down" data-aos-duration="1000">
             <div class="hero__content">
                 <h1 class="hero__title">Lautaro Gregoraschuk</h1>
                 <p class="hero__subtitle">Estudiante de Ingeniería en Sistemas</p>
                 <p class="hero__desc">Apasionado por la tecnología, el desarrollo de software y el análisis de sistemas. Busco oportunidades para trabajar y seguir creciendo en IT.</p>
+                <a href="https://drive.google.com/file/d/1guy4LcWdHb2lA3CfZvqBZMiizfq9Ymo-/view?usp=drive_link" class="btn-cv animate-pop" target="_blank" rel="noopener">Ver CV</a>
             </div>
         </section>
-        <section id="about" class="section section--about">
+        <section id="about" class="section section--about" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <h2 class="section__title">Stack Tecnológico</h2>
                 <div class="stack__grid">
-                    <div class="stack__item"><i class="fas fa-cubes"></i><span>Object-Oriented Programming</span></div>
-                    <div class="stack__item"><i class="fas fa-layer-group"></i><span>Conceptual/Relational Systems Modeling</span></div>
-                    <div class="stack__item"><i class="fab fa-git-alt"></i><span>Git/GitHub</span></div>
-                    <div class="stack__item"><i class="fab fa-python"></i><span>Python</span></div>
-                    <div class="stack__item"><i class="fas fa-database"></i><span>SQL</span></div>
-                    <div class="stack__item"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
-                    <div class="stack__item"><i class="fas fa-project-diagram"></i><span>UML Modeling</span></div>
-                    <div class="stack__item"><i class="fab fa-html5"></i><span>HTML</span></div>
-                    <div class="stack__item"><i class="fab fa-css3-alt"></i><span>CSS/SCSS</span></div>
-                    <div class="stack__item"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-cubes"></i><span>Object-Oriented Programming</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="200"><i class="fas fa-layer-group"></i><span>Conceptual/Relational Systems Modeling</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="300"><i class="fab fa-git-alt"></i><span>Git/GitHub</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="400"><i class="fab fa-python"></i><span>Python</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-database"></i><span>SQL</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="600"><i class="fas fa-leaf"></i><span>MongoDB</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="700"><i class="fas fa-project-diagram"></i><span>UML Modeling</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="800"><i class="fab fa-html5"></i><span>HTML</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="900"><i class="fab fa-css3-alt"></i><span>CSS/SCSS</span></div>
+                    <div class="stack__item" data-aos="zoom-in" data-aos-delay="1000"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
                 </div>
             </div>
         </section>
-        <section class="section section--about-soft">
+        <section class="section section--about-soft" data-aos="fade-up" data-aos-duration="1000">
             <div class="container">
                 <h2 class="section__title">Sobre mí</h2>
                 <p class="section__description">
@@ -56,11 +59,44 @@
                 </p>
             </div>
         </section>
+        <!-- SECTOR DE CERTIFICADOS -->
+        <section id="certificates" class="section section--certificates" data-aos="fade-up">
+            <div class="container">
+                <h2 class="section__title">Certificados</h2>
+                <ul class="certificates__list">
+                    <li>
+                        <a href="https://drive.google.com/file/d/1fNUkjHX67Cbui3cGJEpOIvs57ceicfX4/view?usp=sharing" target="_blank" rel="noopener">
+                            <i class="fas fa-file-pdf"></i> 2025 Global Conversations Certificate
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1XpCk7mS8zcF-TepmFuKKHDArxobdB6l4/view?usp=sharing" target="_blank" rel="noopener">
+                            <i class="fas fa-file-pdf"></i> Certificado Inglés B1+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1vAcGSIiUqnAGxSyOlA61kbNW0FEN8nF0/view?usp=sharing" target="_blank" rel="noopener">
+                            <i class="fas fa-file-pdf"></i> Certificado Charla Gestión Del Tiempo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1frjh4tPYFo_NUZaa5K-jH1Z5UypO40LA/view?usp=sharing" target="_blank" rel="noopener">
+                            <i class="fas fa-file-pdf"></i> Certificado HackLab 2024
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://drive.google.com/file/d/1goc01jW_6d7HkGYj--gwVHJTllbQRqPp/view?usp=sharing" target="_blank" rel="noopener">
+                            <i class="fas fa-file-pdf"></i> CISCO - Introduction to Cybersecurity
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
         <section id="projects" class="section section--projects">
             <div class="container">
                 <h2 class="section__title">Proyectos</h2>
                 <div class="projects__grid">
-                    <div class="project card">
+                    <div class="project card" data-aos="fade-right" data-aos-delay="200">
                         <div class="card__content">
                             <h3 class="project__title">Catalogo Web - Marcapasos Deportes</h3>
                             <p class="project__description">
@@ -74,12 +110,12 @@
                                 <span class="tech-badge">FastAPI</span>
                                 <span class="tech-badge">MongoDB</span>
                             </div>
-                            <a href="https://marcapasosdeportes.netlify.app" target="_blank" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catalogo</a>
-                            <a href="https://github.com/LauuGrego/marcapasos-backend" target="_blank" class="project__repo"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://youtu.be/tu_video_marcapasos" target="_blank" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
+                            <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catalogo</a>
+                            <a href="https://github.com/LauuGrego/marcapasos-backend" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://youtu.be/tu_video_marcapasos" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
                         </div>
                     </div>
-                    <div class="project card">
+                    <div class="project card" data-aos="fade-left" data-aos-delay="400">
                         <div class="card__content">
                             <h3 class="project__title">Catalogo Web - COTITO</h3>
                             <p class="project__description">
@@ -93,12 +129,12 @@
                                 <span class="tech-badge">FastAPI</span>
                                 <span class="tech-badge">MongoDB</span>
                             </div>
-                            <a href="https://cotitotienda.netlify.app" target="_blank" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catalogo</a>
-                            <a href="https://github.com/LauuGrego/cotito-backend" target="_blank" class="project__repo"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://youtu.be/tu_video_cotito" target="_blank" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
+                            <a href="https://cotitotienda.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver catalogo</a>
+                            <a href="https://github.com/LauuGrego/cotito-backend" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://youtu.be/tu_video_cotito" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
                         </div>
                     </div>
-                    <div class="project card">
+                    <div class="project card" data-aos="fade-up" data-aos-delay="600">
                         <div class="card__content">
                             <h3 class="project__title">Radio Web - Pandemonium</h3>
                             <p class="project__description">
@@ -109,24 +145,78 @@
                                 <span class="tech-badge">CSS</span>
                                 <span class="tech-badge">JavaScript</span>
                             </div>
-                            <a href="https://pandemoniumradio.netlify.app" target="_blank" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
-                            <a href="https://github.com/LauuGrego/pandemoniumradio" target="_blank" class="project__repo"><i class="fab fa-github"></i> Código</a>
-                            <a href="https://youtu.be/tu_video_pandemonium" target="_blank" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
+                            <a href="https://pandemoniumradio.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
+                            <a href="https://github.com/LauuGrego/pandemoniumradio" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                            <a href="https://youtu.be/tu_video_pandemonium" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Video explicativo</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="contact" class="section section--contact">
+        <section id="contact" class="section section--contact" data-aos="fade-up">
             <div class="container">
                 <h2 class="section__title">Contacto</h2>
                 <div class="contact__icons">
-                    <a href="mailto:lautaro@email.com" class="contact__icon" title="Email"><i class="fas fa-envelope"></i></a>
-                    <a href="https://github.com/LauuGrego" target="_blank" class="contact__icon" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/lautaro-gregoraschuk-8a9292301/" target="_blank" class="contact__icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="mailto:lautaro@email.com" class="contact__icon" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/LauuGrego" target="_blank" rel="noopener" class="contact__icon" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/lautaro-gregoraschuk-8a9292301/" target="_blank" rel="noopener" class="contact__icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 </div>
+                <!-- FORMULARIO DE CONTACTO -->
+                <form class="contact__form animate-pop"
+                      action="https://formspree.io/f/xkgbrrol" 
+                      method="POST">
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input 
+                            type="text" 
+                            id="name"
+                            name="name" 
+                            placeholder="Ingresa tu nombre" 
+                            required
+                            minlength="2"
+                            autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Correo electrónico</label>
+                        <input 
+                            type="email" 
+                            id="email"
+                            name="email" 
+                            placeholder="tu@email.com" 
+                            required
+                            autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea 
+                            id="message"
+                            name="message" 
+                            placeholder="¿En qué puedo ayudarte?" 
+                            rows="5" 
+                            required
+                            minlength="10"></textarea>
+                    </div>
+                    <button type="submit" class="btn-form">
+                        <i class="fas fa-paper-plane"></i> Enviar mensaje
+                    </button>
+                </form>
             </div>
         </section>
     </main>
+    <script>
+        ScrollOut({
+            targets: '[data-scroll]',
+            once: true
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,      // Solo animación de entrada
+            mirror: false,   // No animación de salida
+            offset: 100
+        });
+    </script>
 </body>
 </html>
