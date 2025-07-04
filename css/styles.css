@@ -898,7 +898,7 @@ body {
         font-size: 1rem;
         border-radius: 6px;
         margin: 0 1.2rem;
-        width: 80%;
+        width: 85%;
         box-sizing: border-box;
     }
     .btn-form {
@@ -920,7 +920,15 @@ body {
         font-size: 0.92rem;
     }
     .hero__title {
-        font-size: 1.6rem;
+        font-size: 2.2rem;
+    }
+     .hero__subtitle {
+        font-size: 1.5rem;
+        padding: 0 0.8rem;
+    }
+     .hero__desc {
+        font-size: 1.3rem;
+        padding: 0 0.5rem;
     }
     .nav__list {
         flex-wrap: wrap;
