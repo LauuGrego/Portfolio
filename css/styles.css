@@ -165,6 +165,7 @@ body {
     color: var(--color-light);
     margin-top: 0.5rem;
     font-family: 'Roboto Mono', monospace;
+    text-align: center;
 }
 
 .stack__item:hover {
@@ -219,7 +220,8 @@ body {
 
 .project__title {
     font-size: 1.3rem;
-    color: var(--color-purple);
+    color: var(--color-blue);
+    font-weight: bolder;
     margin-bottom: 0.5rem;
     font-family: 'Montserrat', sans-serif;
 }
