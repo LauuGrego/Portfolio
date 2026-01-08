@@ -1,30 +1,18 @@
 :root {
     --color-bg: #0f172a;
-    /* Slate 900 */
     --color-navy: #1e293b;
-    /* Slate 800 */
     --color-purple: #a855f7;
-    /* Purple 500 */
     --color-purple-glow: rgba(168, 85, 247, 0.5);
     --color-blue: #38bdf8;
-    /* Sky 400 */
     --color-light: #e2e8f0;
-    /* Slate 200 */
     --color-white: #f8fafc;
-    /* Slate 50 */
     --color-gray: #94a3b8;
-    /* Slate 400 */
     --color-dark: #020617;
-    /* Slate 950 */
-
-    /* Glassmorphism Variables */
     --glass-bg: rgba(30, 41, 59, 0.4);
-    /* Low opacity slate */
     --glass-border: rgba(255, 255, 255, 0.08);
     --glass-blur: 16px;
 
     --color-accent: #2dd4bf;
-    /* Teal 400 - Fresh modern accent */
     --color-badge: rgba(45, 212, 191, 0.1);
     --color-badge-text: #2dd4bf;
 
@@ -56,11 +44,9 @@ body {
     width: 100%;
     margin: 0 auto;
     margin-top: 70px;
-    /* Adjusted for glass navbar */
     padding: 2rem 1rem;
 }
 
-/* Glass Navbar */
 .glass-nav {
     background: rgba(15, 23, 42, 0.7);
     backdrop-filter: blur(var(--glass-blur));
@@ -73,7 +59,6 @@ body {
 @media screen and (max-width: 768px) {
     .main {
         margin-top: 56px;
-        /* Adjusted for fixed navbar */
         padding: 1rem;
     }
 
@@ -110,56 +95,63 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 80vh;
-    /* More breathing room */
     text-align: center;
-    /* Removed old gradient to let body subtle gradient show */
     background: transparent;
     position: relative;
-    overflow: hidden;
+    padding-top: 2rem;
+}
+
+.hero__profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 15%;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+    border: 4px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 30px rgba(45, 212, 191, 0.3);
+    transform: scale(1.2);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.hero__profile-img:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 40px rgba(14, 255, 223, 0.3);
 }
 
 .hero__title {
-    font-size: 4.5rem;
-    /* Larger for impact */
+    font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1.5rem;
-    /* More spacing */
     margin-top: 0;
     background: linear-gradient(135deg, var(--color-white) 0%, var(--color-light) 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: -2px;
-    /* Tighter for large text */
     text-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .hero__subtitle {
     font-size: 1.4rem;
-    /* Slightly larger */
     color: var(--color-blue);
     margin-bottom: 0.8rem;
-    /* More spacing */
     font-family: 'Roboto Mono', monospace;
 }
 
 .hero__desc {
     font-size: 1.2rem;
-    /* Slightly larger */
     color: var(--color-gray);
-    /* Softer color */
     margin-bottom: 2rem;
-    /* More spacing */
     padding: 0 2rem;
     max-width: 700px;
-    /* Constrain width */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
 
 .section {
-    margin-bottom: 2.5rem;
+    margin-top: 8rem;
 }
 
 .section__title {
@@ -208,7 +200,6 @@ body {
     min-height: 110px;
     font-size: 2.5rem;
     color: var(--color-light);
-    /* Icons lighter now */
     transition: var(--transition-smooth);
 }
 
@@ -245,6 +236,14 @@ body {
     justify-content: space-between;
     transition: var(--transition-smooth);
     height: 100%;
+    margin-bottom: 1.5rem;
+    /* Space between stacked cards on mobile */
+}
+
+@media (min-width: 992px) {
+    .card {
+        margin-bottom: 0;
+    }
 }
 
 .card:hover {
@@ -298,6 +297,69 @@ body {
 
 .project__meta {
     margin-bottom: 1rem;
+}
+
+.project__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition-smooth);
+}
+
+.card:hover .project__image {
+    transform: scale(1.02);
+}
+
+/* .project__image--portrait {
+    height: 450px !important;
+    Taller for vertical screenshots
+    object-position: top center;
+} */
+
+/* Mobile Mockup Style for Invitations */
+.mobile-mockup-wrapper {
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(135deg, var(--color-navy) 0%, #2a2d3e 100%);
+    /* Subtle dark gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    padding: 1.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Optional: Add a subtle glow or pattern behind */
+.mobile-mockup-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    background: var(--color-purple-glow);
+    filter: blur(40px);
+    opacity: 0.2;
+    border-radius: 50%;
+}
+
+.mobile-mockup-img {
+    height: 100%;
+    width: auto;
+    max-width: 90%;
+    object-fit: contain;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .mobile-mockup-img {
+    transform: scale(1.03) translateY(-5px);
 }
 
 .tech-badge {
@@ -414,18 +476,26 @@ body {
     background: none;
     border-radius: 0;
     box-shadow: none;
-    padding: 0.5rem 0;
+    padding: 0;
     display: block;
     max-width: 100%;
-    margin: 0 auto;
-    margin-bottom: 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 8rem;
+    /* Consistent spacing */
 }
 
 .section--certificates .container {
     width: 100%;
     max-width: 1320px;
     margin: 0 auto;
-    padding: 0 6rem;
+    /* Responsive padding: use Bootstrap standard container behavior or slight adjust for desktop */
+}
+
+@media (min-width: 992px) {
+    .section--certificates .container {
+        padding: 0 6rem;
+    }
 }
 
 .certificates__list {
