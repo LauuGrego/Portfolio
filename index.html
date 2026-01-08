@@ -36,7 +36,7 @@
         <section id="about" class="hero" data-animate>
             <div class="hero__content">
                 <h1 class="hero__title">Lautaro <br> Gregoraschuk</h1>
-                <p class="hero__subtitle">Estudiante de Ingeniería en Sistemas</p>
+                <p class="hero__subtitle">Estudiante Avanzado de Ingeniería en Sistemas</p>
                 <p class="hero__desc">
                     Apasionado por la tecnología, el desarrollo de software y el análisis de sistemas.<br>
                     Busco oportunidades para trabajar y seguir creciendo en TI.
@@ -86,6 +86,18 @@
                             <span>C#</span>
                         </div>
                     </div>
+                     <div class="col-6 col-md-4 col-lg-3">
+                        <div class="stack__item" data-aos="zoom-in" data-aos-delay="1200"><i class="fas fa-code"></i><span>TypeScript</span></div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3">
+                        <div class="stack__item" data-aos="zoom-in" data-aos-delay="1300"><i class="fab fa-react"></i><span>React</span></div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3">
+                        <div class="stack__item" data-aos="zoom-in" data-aos-delay="1400"><i class="fas fa-server"></i><span>NestJS</span></div>
+                    </div>
+                     <div class="col-6 col-md-4 col-lg-3">
+                        <div class="stack__item" data-aos="zoom-in" data-aos-delay="1500"><i class="fas fa-wind"></i><span>Tailwind CSS</span></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -95,25 +107,49 @@
                 <h2 class="section__title">Proyectos Destacados</h2>
                 <div class="row g-4">
                     <div class="col-lg-6">
+                        <div class="project card h-100" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-body d-flex flex-column">
+                                <h3 class="project__title">Shift - Gestión de Turnos (SaaS)</h3>
+                                <p class="project__description">
+                                    <strong>Rol:</strong> Fullstack Developer
+                                </p>
+                                <div class="project__meta d-flex flex-wrap gap-2">
+                                    <span class="tech-badge">React</span>
+                                    <span class="tech-badge">TypeScript</span>
+                                    <span class="tech-badge">Tailwind CSS</span>
+                                    <span class="tech-badge">NestJS</span>
+                                    <span class="tech-badge">PostgreSQL (Prisma)</span>
+                                    <span class="tech-badge">Resend</span>
+                                </div>
+                                 <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <a href="https://shift-turnos.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Página Web</a>
+                                    <a href="https://github.com/LauuGrego/GestorTurnos" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
                         <div class="project card h-100" data-aos="fade-up" data-aos-delay="200">
                             <div class="card-body d-flex flex-column">
                                 <h3 class="project__title">Catálogo Web - Marcapasos Deportes &amp; COTITO</h3>
                                 <p class="project__description">
                                     <strong>Rol:</strong> Fullstack Developer<br>
                                 </p>
-                                <div class="project__meta">
+                                <div class="project__meta d-flex flex-wrap gap-2">
                                     <span class="tech-badge">HTML</span>
                                     <span class="tech-badge">CSS</span>
                                     <span class="tech-badge">JavaScript</span>
                                     <span class="tech-badge">Python(FastAPI)</span>
                                     <span class="tech-badge">MongoDB</span>
                                 </div>
-                                <div class="mt-auto">
-                                    <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo MarcaPasos Deportes</a>
-                                    <a href="https://github.com/LauuGrego/WebMPDeportes" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código MarcaPasos Deportes</a>
-                                    <a href="https://cotitokids.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo COTITO</a>
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo MP</a>
+                                    <a href="https://github.com/LauuGrego/WebMPDeportes" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código MP</a>
+                                    <!-- Reduced text length to fit better with justify-between if needed, but original text might be long. I will keep original structure but wrap in flex. -->
+                                </div>
+                                <div class="mt-1 d-flex justify-content-between align-items-center">
+                                     <a href="https://cotitokids.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo COTITO</a>
                                     <a href="https://github.com/LauuGrego/WebCOTITO" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código COTITO</a>
-                                    <!-- <a href="https://youtu.be/tu_video_marcapasos" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Explicación Codigo</a> -->
                                 </div>
                             </div>
                         </div>
@@ -125,15 +161,14 @@
                                 <p class="project__description">
                                     <strong>Rol:</strong> Frontend Developer<br>
                                 </p>
-                                <div class="project__meta">
+                                <div class="project__meta d-flex flex-wrap gap-2">
                                     <span class="tech-badge">HTML</span>
                                     <span class="tech-badge">CSS</span>
                                     <span class="tech-badge">JavaScript</span>
                                 </div>
-                                <div class="mt-auto">
-                                    <a href="https://landinginformativaejemplo.netlify.app/" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Landing Clinica Dental</a>
-                                    <a href="https://github.com/LauuGrego/LandingEjemplo" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código Clinica Dental</a>
-                                   <!-- <a href="https://youtu.be/tu_video_pandemonium" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Explicación Código</a>-->
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
+                                    <a href="https://landinginformativaejemplo.netlify.app/" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Landing Dental</a>
+                                    <a href="https://github.com/LauuGrego/LandingEjemplo" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código Dental</a>
                                 </div>
                             </div>
                         </div>
@@ -145,15 +180,14 @@
                                 <p class="project__description">
                                     <strong>Rol:</strong> Fullstack Developer<br>
                                 </p>
-                                <div class="project__meta">
+                                <div class="project__meta d-flex flex-wrap gap-2">
                                     <span class="tech-badge">HTML</span>
                                     <span class="tech-badge">CSS</span>
                                     <span class="tech-badge">JavaScript(Node.js)</span>
                                 </div>
-                                <div class="mt-auto">
+                                <div class="mt-auto d-flex justify-content-between align-items-center">
                                     <a href="https://pandemoniumradio.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
                                     <a href="https://github.com/LauuGrego/Pandemonium" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
-                                   <!-- <a href="https://youtu.be/tu_video_pandemonium" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-video"></i> Explicación Código</a>-->
                                 </div>
                             </div>
                         </div>
@@ -165,14 +199,16 @@
                                 <p class="project__description">
                                     <strong>Rol:</strong> Frontend Developer<br>
                                 </p>
-                                <div class="project__meta">
+                                <div class="project__meta d-flex flex-wrap gap-2">
                                     <span class="tech-badge">HTML</span>
                                     <span class="tech-badge">CSS</span>
                                     <span class="tech-badge">JavaScript</span>
                                 </div>
-                                <div class="mt-auto">
+                                <div class="mt-auto d-flex justify-content-between align-items-center mb-2">
                                     <a href="https://franfest.netlify.app/" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Invitación 1</a>
                                     <a href="https://boda-natyroger.netlify.app/" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Invitación 2</a>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center">
                                      <a href="https://alifest.netlify.app/" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Invitación 3</a>
                                      <a href="https://babyshower-olivia.netlify.app/" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Invitación 4</a>
                                 </div>
@@ -186,43 +222,57 @@
         <section id="certificates" class="section section--certificates" data-animate>
             <div class="container">
                 <h2 class="section__title">Certificados</h2>
-                <ul class="certificates__list">
-                    <li>
-                        <a href="https://drive.google.com/file/d/1fNUkjHX67Cbui3cGJEpOIvs57ceicfX4/view?usp=sharing" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> 2025 Global Conversations Certificate
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1XpCk7mS8zcF-TepmFuKKHDArxobdB6l4/view?usp=sharing" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> Certificado Inglés B1+
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1vAcGSIiUqnAGxSyOlA61kbNW0FEN8nF0/view?usp=sharing" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> Certificado Charla Gestión Del Tiempo
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1frjh4tPYFo_NUZaa5K-jH1Z5UypO40LA/view?usp=sharing" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> Certificado HackLab 2024
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1goc01jW_6d7HkGYj--gwVHJTllbQRqPp/view?usp=sharing" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> CISCO - Introduction to Cybersecurity
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://drive.google.com/file/d/1IQAVcTHaw7zs0vEf73w1YgopvYePa1E9/view?usp=sharing" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> CISCO - Cybersecurity Essentials
-                        </a>
-                    </li>
-                      <li>
-                        <a href="https://drive.google.com/file/d/1isUrkCHWMw4V9Fz4NJ4uAL4ubtQ7fu0-/view?usp=drive_link" target="_blank" rel="noopener">
-                            <i class="fas fa-file-pdf"></i> CISCO - Networking Essentials
-                        </a>
-                    </li>
-                </ul>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="certificate-item">
+                            <a href="https://drive.google.com/file/d/1fNUkjHX67Cbui3cGJEpOIvs57ceicfX4/view?usp=sharing" target="_blank" rel="noopener">
+                                <i class="fas fa-file-pdf"></i> 2025 Global Conversations Certificate
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="certificate-item">
+                            <a href="https://drive.google.com/file/d/1XpCk7mS8zcF-TepmFuKKHDArxobdB6l4/view?usp=sharing" target="_blank" rel="noopener">
+                                <i class="fas fa-file-pdf"></i> Certificado Inglés B1+
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="certificate-item">
+                            <a href="https://drive.google.com/file/d/1vAcGSIiUqnAGxSyOlA61kbNW0FEN8nF0/view?usp=sharing" target="_blank" rel="noopener">
+                                <i class="fas fa-file-pdf"></i> Certificado Charla Gestión Del Tiempo
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="certificate-item">
+                            <a href="https://drive.google.com/file/d/1frjh4tPYFo_NUZaa5K-jH1Z5UypO40LA/view?usp=sharing" target="_blank" rel="noopener">
+                                <i class="fas fa-file-pdf"></i> Certificado HackLab 2024
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="certificate-item">
+                            <a href="https://drive.google.com/file/d/1goc01jW_6d7HkGYj--gwVHJTllbQRqPp/view?usp=sharing" target="_blank" rel="noopener">
+                                <i class="fas fa-file-pdf"></i> CISCO - Introduction to Cybersecurity
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="certificate-item">
+                            <a href="https://drive.google.com/file/d/1IQAVcTHaw7zs0vEf73w1YgopvYePa1E9/view?usp=sharing" target="_blank" rel="noopener">
+                                <i class="fas fa-file-pdf"></i> CISCO - Cybersecurity Essentials
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="certificate-item">
+                            <a href="https://drive.google.com/file/d/1isUrkCHWMw4V9Fz4NJ4uAL4ubtQ7fu0-/view?usp=drive_link" target="_blank" rel="noopener">
+                                <i class="fas fa-file-pdf"></i> CISCO - Networking Essentials
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- TESTIMONIOS / PRUEBAS SOCIALES 
