@@ -14,7 +14,7 @@
 </head>
 <body>
     <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: var(--color-navy);">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-nav">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">LG</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,10 +35,10 @@
     <main class="main">
         <section id="about" class="hero" data-animate>
             <div class="hero__content">
-                <h1 class="hero__title">Lautaro <br> Gregoraschuk</h1>
+                <h1 class="hero__title">Lautaro Gregoraschuk</h1>
                 <p class="hero__subtitle">Estudiante Avanzado de Ingeniería en Sistemas</p>
                 <p class="hero__desc">
-                    Apasionado por la tecnología, el desarrollo de software y el análisis de sistemas.<br>
+                    Apasionado por la tecnología y el desarrollo de software.<br>
                     Busco oportunidades para trabajar y seguir creciendo en TI.
                 </p>
                 <a href="https://drive.google.com/file/d/1guy4LcWdHb2lA3CfZvqBZMiizfq9Ymo-/view?usp=sharing" class="btn-cv animate-pop" target="_blank" rel="noopener">Ver CV</a>
@@ -145,7 +145,6 @@
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
                                     <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo MP</a>
                                     <a href="https://github.com/LauuGrego/WebMPDeportes" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código MP</a>
-                                    <!-- Reduced text length to fit better with justify-between if needed, but original text might be long. I will keep original structure but wrap in flex. -->
                                 </div>
                                 <div class="mt-1 d-flex justify-content-between align-items-center">
                                      <a href="https://cotitokids.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo COTITO</a>
@@ -307,28 +306,30 @@
                 <form class="contact__form animate-pop"
                       action="https://formspree.io/f/xkgbrrol" 
                       method="POST">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Nombre</label>
-                        <input 
-                            type="text" 
-                            class="form-control"
-                            id="name"
-                            name="name" 
-                            placeholder="Ingresa tu nombre" 
-                            required
-                            minlength="2"
-                            autocomplete="name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Correo electrónico</label>
-                        <input 
-                            type="email" 
-                            class="form-control"
-                            id="email"
-                            name="email" 
-                            placeholder="tu@email.com" 
-                            required
-                            autocomplete="email">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input 
+                                type="text" 
+                                class="form-control"
+                                id="name"
+                                name="name" 
+                                placeholder="Ingresa tu nombre" 
+                                required
+                                minlength="2"
+                                autocomplete="name">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input 
+                                type="email" 
+                                class="form-control"
+                                id="email"
+                                name="email" 
+                                placeholder="tu@email.com" 
+                                required
+                                autocomplete="email">
+                        </div>
                     </div>
                     <div class="mb-3">
                         <label for="message" class="form-label">Mensaje</label>
@@ -337,7 +338,7 @@
                             id="message"
                             name="message" 
                             placeholder="¿En qué puedo ayudarte?" 
-                            rows="5" 
+                            rows="4" 
                             required
                             minlength="10"></textarea>
                     </div>
@@ -359,13 +360,13 @@
     <script>
         AOS.init({
             duration: 800,
-            once: true,      // Solo animación de entrada
-            mirror: false,   // No animación de salida
+            once: true,      
+            mirror: false,   
             offset: 100
         });
     </script>
     <script>
-    // IntersectionObserver para animar entradas de sección sin librerías pesadas
+
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -377,7 +378,6 @@
         }, { threshold: 0.15 });
         document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
     } else {
-        // fallback: mostrar todo
         document.querySelectorAll('[data-animate]').forEach(el => el.classList.add('in-view'));
     }
     </script>
