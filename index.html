@@ -26,11 +26,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#certificates">Certificados</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav_about">Sobre mí</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#skills" data-i18n="nav_skills">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#certificates" data-i18n="nav_certs">Certificados</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav_contact">Contacto</a></li>
+                        <li class="nav-item ms-lg-3 d-flex align-items-center"><a class="nav-link fw-bold" href="#" id="lang-toggle" style="padding: 0.25rem 0.5rem; border: 1px solid rgba(255,255,255,0.5); border-radius: 4px; font-size: 0.85rem;">EN</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,11 +42,11 @@
             <div class="hero__content">
                 <img src="./images/profile.jpg" alt="Lautaro Gregoraschuk" class="hero__profile-img animate-pop">
                 <h1 class="hero__title">Lautaro Gregoraschuk</h1>
-                <p class="hero__subtitle">Estudiante Avanzado de Ingeniería en Sistemas</p>
+                <p class="hero__subtitle" data-i18n="hero_subtitle">Estudiante Avanzado de Ingeniería en Sistemas</p>
                 <p class="hero__desc">
-                    Especializado en el ecosistema JavaScript/TypeScript (React, NestJS) y en el desarrollo de APIs robustas.<br>
-                    Integro la Inteligencia Artificial como herramienta clave para optimizar el desarrollo y la investigación.<br>
-                    Busco oportunidades para trabajar y seguir creciendo en TI.
+                    <span data-i18n="hero_desc_1">Especializado en el ecosistema JavaScript/TypeScript (React, NestJS) y en el desarrollo de APIs robustas.</span><br>
+                    <span data-i18n="hero_desc_2">Integro la Inteligencia Artificial como herramienta clave para optimizar el desarrollo y la investigación.</span><br>
+                    <span data-i18n="hero_desc_3">Busco oportunidades para trabajar y seguir creciendo en TI.</span>
                 </p>
                 <a href="https://drive.google.com/file/d/1guy4LcWdHb2lA3CfZvqBZMiizfq9Ymo-/view?usp=sharing" class="btn-cv animate-pop" target="_blank" rel="noopener">CV (Español)</a>
                 <a href="https://drive.google.com/file/d/1jQ2rRXGyT-G-IT_BbAhBe9SkWtLQsR1c/view?usp=sharing" class="btn-cv animate-pop" target="_blank" rel="noopener">Resume (English)</a>
@@ -54,9 +55,9 @@
         <!-- HABILIDADES -->
         <section id="skills" class="section section--about" data-animate>
             <div class="container">
-                <h2 class="section__title">Habilidades Técnicas</h2>
+                <h2 class="section__title" data-i18n="section_skills">Habilidades Técnicas</h2>
                 <div class="row g-4 mb-5 justify-content-center">
-                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);">Lenguajes</h3>
+                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);" data-i18n="skills_lang">Lenguajes</h3>
                     <div class="col-6 col-md-4 col-lg-4">
                         <div class="stack__item" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-code"></i><span>TypeScript</span></div>
                     </div>
@@ -82,7 +83,7 @@
                 </div>
 
                 <div class="row g-4 mb-5 justify-content-center">
-                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);">Frameworks & Bibliotecas</h3>
+                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);" data-i18n="skills_fw">Frameworks & Bibliotecas</h3>
                     <div class="col-6 col-md-4 col-lg-4">
                         <div class="stack__item" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-react"></i><span>React</span></div>
                     </div>
@@ -95,7 +96,7 @@
                 </div>
 
                 <div class="row g-4 mb-5 justify-content-center">
-                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);">Bases de Datos & ORM</h3>
+                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);" data-i18n="skills_db">Bases de Datos & ORM</h3>
                     <div class="col-6 col-md-4 col-lg-4">
                         <div class="stack__item" data-aos="zoom-in" data-aos-delay="100"><i class="fas fa-database"></i><span>SQL</span></div>
                     </div>
@@ -108,7 +109,7 @@
                 </div>
 
                 <div class="row g-4 justify-content-center">
-                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);">Herramientas & Conceptos</h3>
+                    <h3 class="col-12 text-center mb-4" style="color: var(--color-blue);" data-i18n="skills_tools">Herramientas & Conceptos</h3>
                     <div class="col-6 col-md-4 col-lg-4">
                         <div class="stack__item" data-aos="zoom-in" data-aos-delay="100"><i class="fab fa-git-alt"></i><span>Git/GitHub</span></div>
                     </div>
@@ -120,7 +121,7 @@
                         <div class="stack__item" data-aos="zoom-in" data-aos-delay="400"><i class="fas fa-project-diagram"></i><span>UML / Modelado</span></div>
                     </div>
                     <div class="col-6 col-md-4 col-lg-4">
-                        <div class="stack__item" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-robot"></i><span>IA (Desarrollo &amp; Inv.)</span></div>
+                        <div class="stack__item" data-aos="zoom-in" data-aos-delay="500"><i class="fas fa-robot"></i><span data-i18n="skill_ia">IA (Desarrollo &amp; Inv.)</span></div>
                     </div>
                 </div>
             </div>
@@ -128,14 +129,14 @@
         <!-- PROYECTOS -->
         <section id="projects" class="section section--projects" data-animate>
             <div class="container">
-                <h2 class="section__title">Proyectos Destacados</h2>
+                <h2 class="section__title" data-i18n="section_projects">Proyectos Destacados</h2>
                 <div class="row g-4">
                     <div class="col-lg-6">
                         <div class="project card h-100" data-aos="fade-up" data-aos-delay="100">
                             <div class="card-body d-flex flex-column">
                                 <img src="./images/shift.png" alt="Shift Gestion Turnos" class="project__image">
                                 <h3 class="project__title">Shift - Gestión de Turnos (SaaS)</h3>
-                                <p class="project__description">
+                                <p class="project__description" data-i18n="role">
                                     <strong>Rol:</strong> Fullstack Developer
                                 </p>
                                 <div class="project__meta d-flex flex-wrap gap-2">
@@ -147,8 +148,8 @@
                                     <span class="tech-badge">Resend</span>
                                 </div>
                                  <div class="mt-auto d-flex justify-content-between align-items-center">
-                                    <a href="https://shift-turnos.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Página Web</a>
-                                    <a href="https://github.com/LauuGrego/GestorTurnos" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                                    <a href="https://shift-turnos.netlify.app" target="_blank" rel="noopener" class="project__repo" data-i18n="project_web"><i class="fas fa-external-link-alt"></i> Página Web</a>
+                                    <a href="https://github.com/LauuGrego/GestorTurnos" target="_blank" rel="noopener" class="project__repo" data-i18n="project_code"><i class="fab fa-github"></i> Código</a>
                                 </div>
                             </div>
                         </div>
@@ -158,7 +159,7 @@
                             <div class="card-body d-flex flex-column">
                                 <img src="./images/mpdeportes.png" class="project__image" alt="Marcapasos Deportes">
                                 <h3 class="project__title">Catálogo Web - Marcapasos Deportes</h3>
-                                <p class="project__description">
+                                <p class="project__description" data-i18n="role">
                                     <strong>Rol:</strong> Fullstack Developer<br>
                                 </p>
                                 <div class="project__meta d-flex flex-wrap gap-2">
@@ -169,8 +170,8 @@
                                     <span class="tech-badge">MongoDB</span>
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                                    <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo MP</a>
-                                    <a href="https://github.com/LauuGrego/WebMPDeportes" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código MP</a>
+                                    <a href="https://marcapasosdeportes.netlify.app" target="_blank" rel="noopener" class="project__repo" data-i18n="project_catalog_mp"><i class="fas fa-external-link-alt"></i> Catálogo MP</a>
+                                    <a href="https://github.com/LauuGrego/WebMPDeportes" target="_blank" rel="noopener" class="project__repo" data-i18n="project_code_mp"><i class="fab fa-github"></i> Código MP</a>
                                 </div>
                             </div>
                         </div>
@@ -180,7 +181,7 @@
                             <div class="card-body d-flex flex-column">
                                 <img src="./images/cotito.png" class="project__image" alt="COTITO">
                                 <h3 class="project__title">Catálogo Web - COTITO</h3>
-                                <p class="project__description">
+                                <p class="project__description" data-i18n="role">
                                     <strong>Rol:</strong> Fullstack Developer<br>
                                 </p>
                                 <div class="project__meta d-flex flex-wrap gap-2">
@@ -191,8 +192,8 @@
                                     <span class="tech-badge">MongoDB</span>
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                                    <a href="https://cotitokids.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Catálogo COTITO</a>
-                                    <a href="https://github.com/LauuGrego/WebCOTITO" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código COTITO</a>
+                                    <a href="https://cotitokids.netlify.app" target="_blank" rel="noopener" class="project__repo" data-i18n="project_catalog_cotito"><i class="fas fa-external-link-alt"></i> Catálogo COTITO</a>
+                                    <a href="https://github.com/LauuGrego/WebCOTITO" target="_blank" rel="noopener" class="project__repo" data-i18n="project_code_cotito"><i class="fab fa-github"></i> Código COTITO</a>
                                 </div>
                             </div>
                         </div>
@@ -202,7 +203,7 @@
                             <div class="card-body d-flex flex-column">
                                 <img src="./images/landingdental.png" alt="Landing Pages" class="project__image">
                                 <h3 class="project__title">Landing Pages</h3>
-                                <p class="project__description">
+                                <p class="project__description" data-i18n="role_front">
                                     <strong>Rol:</strong> Frontend Developer<br>
                                 </p>
                                 <div class="project__meta d-flex flex-wrap gap-2">
@@ -211,8 +212,8 @@
                                     <span class="tech-badge">JavaScript</span>
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                                    <a href="https://landinginformativaejemplo.netlify.app/" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Landing Dental</a>
-                                    <a href="https://github.com/LauuGrego/LandingEjemplo" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código Dental</a>
+                                    <a href="https://landinginformativaejemplo.netlify.app/" target="_blank" rel="noopener" class="project__repo" data-i18n="project_dental"><i class="fas fa-external-link-alt"></i> Landing Dental</a>
+                                    <a href="https://github.com/LauuGrego/LandingEjemplo" target="_blank" rel="noopener" class="project__repo" data-i18n="project_code_dental"><i class="fab fa-github"></i> Código Dental</a>
                                 </div>
                             </div>
                         </div>
@@ -222,7 +223,7 @@
                             <div class="card-body d-flex flex-column">
                                 <img src="./images/pandemonium.png" alt="Radio Pandemonium" class="project__image">
                                 <h3 class="project__title">Radio Web - Pandemonium</h3>
-                                <p class="project__description">
+                                <p class="project__description" data-i18n="role">
                                     <strong>Rol:</strong> Fullstack Developer<br>
                                 </p>
                                 <div class="project__meta d-flex flex-wrap gap-2">
@@ -231,8 +232,8 @@
                                     <span class="tech-badge">JavaScript(Node.js)</span>
                                 </div>
                                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                                    <a href="https://pandemoniumradio.netlify.app" target="_blank" rel="noopener" class="project__repo"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
-                                    <a href="https://github.com/LauuGrego/Pandemonium" target="_blank" rel="noopener" class="project__repo"><i class="fab fa-github"></i> Código</a>
+                                    <a href="https://pandemoniumradio.netlify.app" target="_blank" rel="noopener" class="project__repo" data-i18n="project_view_site"><i class="fas fa-external-link-alt"></i> Ver sitio</a>
+                                    <a href="https://github.com/LauuGrego/Pandemonium" target="_blank" rel="noopener" class="project__repo" data-i18n="project_code"><i class="fab fa-github"></i> Código</a>
                                 </div>
                             </div>
                         </div>
@@ -244,7 +245,7 @@
         <!-- CERTIFICADOS -->
         <section id="certificates" class="section section--certificates" data-animate>
             <div class="container">
-                <h2 class="section__title">Certificados</h2>
+                <h2 class="section__title" data-i18n="section_certs">Certificados</h2>
                 <div class="row g-4">
                     <div class="col-md-6">
                         <div class="certificate-item">
@@ -255,21 +256,21 @@
                     </div>
                     <div class="col-md-6">
                         <div class="certificate-item">
-                            <a href="https://drive.google.com/file/d/1XpCk7mS8zcF-TepmFuKKHDArxobdB6l4/view?usp=sharing" target="_blank" rel="noopener">
+                            <a href="https://drive.google.com/file/d/1XpCk7mS8zcF-TepmFuKKHDArxobdB6l4/view?usp=sharing" target="_blank" rel="noopener" data-i18n="cert_eng">
                                 <i class="fas fa-file-pdf"></i> Certificado Inglés B1+
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="certificate-item">
-                            <a href="https://drive.google.com/file/d/1vAcGSIiUqnAGxSyOlA61kbNW0FEN8nF0/view?usp=sharing" target="_blank" rel="noopener">
+                            <a href="https://drive.google.com/file/d/1vAcGSIiUqnAGxSyOlA61kbNW0FEN8nF0/view?usp=sharing" target="_blank" rel="noopener" data-i18n="cert_time">
                                 <i class="fas fa-file-pdf"></i> Certificado Charla Gestión Del Tiempo
                             </a>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="certificate-item">
-                            <a href="https://drive.google.com/file/d/1frjh4tPYFo_NUZaa5K-jH1Z5UypO40LA/view?usp=sharing" target="_blank" rel="noopener">
+                            <a href="https://drive.google.com/file/d/1frjh4tPYFo_NUZaa5K-jH1Z5UypO40LA/view?usp=sharing" target="_blank" rel="noopener" data-i18n="cert_hacklab">
                                 <i class="fas fa-file-pdf"></i> Certificado HackLab 2024
                             </a>
                         </div>
@@ -321,7 +322,7 @@
         <!-- CONTACTO -->
         <section id="contact" class="section section--contact" data-animate>
             <div class="container">
-                <h2 class="section__title">Contacto</h2>
+                <h2 class="section__title" data-i18n="section_contact">Contacto</h2>
                 <div class="contact__icons">
                     <a href="mailto:lautarogrego@gmail.com" class="contact__icon" title="Email" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
                     <a href="https://github.com/LauuGrego" target="_blank" rel="noopener" class="contact__icon" title="GitHub"><i class="fab fa-github"></i></a>
@@ -332,7 +333,7 @@
                       method="POST">
                     <div class="row">
                         <div class="col-md-6 mb-3">
-                            <label for="name" class="form-label">Nombre</label>
+                            <label for="name" class="form-label" data-i18n="contact_name_label">Nombre</label>
                             <input 
                                 type="text" 
                                 class="form-control"
@@ -341,10 +342,11 @@
                                 placeholder="Ingresa tu nombre" 
                                 required
                                 minlength="2"
-                                autocomplete="name">
+                                autocomplete="name"
+                                data-i18n="contact_name_ph">
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="email" class="form-label">Correo electrónico</label>
+                            <label for="email" class="form-label" data-i18n="contact_email_label">Correo electrónico</label>
                             <input 
                                 type="email" 
                                 class="form-control"
@@ -356,7 +358,7 @@
                         </div>
                     </div>
                     <div class="mb-3">
-                        <label for="message" class="form-label">Mensaje</label>
+                        <label for="message" class="form-label" data-i18n="contact_message_label">Mensaje</label>
                         <textarea 
                             class="form-control"
                             id="message"
@@ -364,9 +366,10 @@
                             placeholder="¿En qué puedo ayudarte?" 
                             rows="4" 
                             required
-                            minlength="10"></textarea>
+                            minlength="10"
+                            data-i18n="contact_message_ph"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn btn-primary" data-i18n="contact_submit">
                         <i class="fas fa-paper-plane"></i> Enviar mensaje
                     </button>
                 </form>
@@ -405,5 +408,6 @@
         document.querySelectorAll('[data-animate]').forEach(el => el.classList.add('in-view'));
     }
     </script>
+    <script src="js/i18n.js"></script>
 </body>
 </html>
